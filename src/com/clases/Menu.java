@@ -33,7 +33,7 @@ public class Menu {
                 case 5:
                     System.out.println("Transferencia entre cuentas");
                 case 6:
-                    System.out.println("Salir");
+                    System.out.println("Salir ");
             }
 
         }
