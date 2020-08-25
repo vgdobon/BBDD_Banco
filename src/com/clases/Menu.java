@@ -23,18 +23,17 @@ public class Menu {
             switch (opcionPrincipal){
 
                 case 1:
-
-
+                    System.out.println("Crear cliente");
                 case 2:
-
+                    System.out.println("Mostrar cliente");
                 case 3:
-
+                    System.out.println("Borrar cliente");
                 case 4:
-
+                    System.out.println("Modificar datos");
                 case 5:
-
+                    System.out.println("Transferencia entre cuentas");
                 case 6:
-
+                    System.out.println("Salir");
             }
 
         }
