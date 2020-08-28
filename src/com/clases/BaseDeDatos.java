@@ -17,6 +17,5 @@ public class BaseDeDatos {
         String clave = "620312786";
         Conexion = DriverManager.getConnection(url, usuario, clave);
 
-
     }
 }
