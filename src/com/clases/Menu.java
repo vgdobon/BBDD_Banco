@@ -1,6 +1,4 @@
 package com.clases;
-
-
 import java.util.Scanner;
 
 import com.clases.Cliente;
@@ -32,6 +30,7 @@ public class Menu {
 
                 case 1://Crear cliente
                     System.out.println("Crear cliente");
+                    System.out.println("_____________");
 
                     System.out.println("Nombre del cliente:");
                     String nombre = sc.nextLine();
@@ -42,13 +41,22 @@ public class Menu {
                     Cliente nuevoCliente = new Cliente(nombre,apellido);
 
                     int opcionCuenta;
+                    int cuentaAsociada;
                     do {
                         System.out.println("Creación de cuenta...");
                         System.out.println("1.Crear nueva cuenta \n " +
                                 "2.Asociar a cuenta ya existente");
                         opcionCuenta = sc.nextInt();
+
                         if(opcionCuenta<1 || opcionCuenta>2) {
-                            System.out.println("No has elegido una opción correcta");
+                            System.out.println("No has elegido una opción correcta.Escriba 1 ó 2.");
+                        }
+
+                        if(opcionCuenta==2){
+                            System.out.println("¿ A qué número de cuenta quieres asociarte ?");
+                            cuentaAsociada = sc.nextInt();
+                        }else{
+                            System.out.println("Creacion de nueva cuenta");
                         }
                     }while (opcionCuenta<1 || opcionCuenta>2);
 
@@ -68,6 +76,7 @@ public class Menu {
                     System.out.println("Transferencia entre cuentas");
                 case 6://Salir
                     System.out.println("Salir ");
+                    salir=true;
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + opcionPrincipal);
