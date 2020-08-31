@@ -30,7 +30,7 @@ public class Menu {
 
                 case 1://Crear cliente
                     System.out.println("Crear cliente");
-                    System.out.println("_____________");
+                    System.out.println("____________");
 
                     System.out.println("Nombre del cliente:");
                     String nombre = sc.nextLine();
